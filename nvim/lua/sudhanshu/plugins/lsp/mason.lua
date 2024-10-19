@@ -30,6 +30,9 @@ return {
 			ensure_installed = {
 				"lua_ls",
 				"csharp_ls",
+				"jdtls",
+				"texlab",
+				"lemminx",
 			},
 		})
 
