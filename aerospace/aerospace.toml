@@ -53,12 +53,12 @@ on-focus-changed = "move-mouse window-lazy-center"
 #                 Monitor pattern is the same as for 'workspace-to-monitor-force-assignment'.
 #                 See: https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 [gaps]
-inner.horizontal = 10
-inner.vertical =   10
-outer.left =       10
-outer.bottom =     10
-outer.top =        10
-outer.right =      10
+inner.horizontal = 12
+inner.vertical   = 12
+outer.left       = 12
+outer.bottom     = 12
+outer.top        = 12
+outer.right      = 12
 
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -205,3 +205,15 @@ alt-shift-h = ['join-with left', 'mode main']
 alt-shift-j = ['join-with down', 'mode main']
 alt-shift-k = ['join-with up', 'mode main']
 alt-shift-l = ['join-with right', 'mode main']
+
+[[on-window-detected]]
+if.app-id = 'com.googlecode.iterm2'
+run = 'move-node-to-workspace T'
+
+[[on-window-detected]]
+if.app-id = 'org.mozilla.firefox'
+run = 'move-node-to-workspace B'
+
+[[on-window-detected]]
+if.app-id = 'com.google.Chrome'
+run = 'move-node-to-workspace B'

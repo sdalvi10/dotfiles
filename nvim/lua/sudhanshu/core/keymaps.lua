@@ -13,9 +13,9 @@ keymap.set("n", "<leader>+", "<C-a>", { desc = "Increment number" }) -- incremen
 keymap.set("n", "<leader>-", "<C-x>", { desc = "Decrement number" }) -- decrement
 
 -- window management
-keymap.set("n", "<leader>sv", "<C-w>v", { desc = "[S]plit window [V]ertically" }) -- split window vertically
-keymap.set("n", "<leader>sh", "<C-w>s", { desc = "[S]plit window [H]orizontally" }) -- split window horizontally
-keymap.set("n", "<leader>se", "<C-w>=", { desc = "[S]plit [E]qual" }) -- make split windows equal width & height
+keymap.set("n", "<leader>sv", "<C-w>v", { desc = "[S]plit [V]ertically" }) -- split window vertically
+keymap.set("n", "<leader>sh", "<C-w>s", { desc = "[S]plit [H]orizontally" }) -- split window horizontally
+keymap.set("n", "<leader>se", "<C-w>=", { desc = "[S]plit [E]qualize" }) -- make split windows equal width & height
 keymap.set("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" }) -- close current split window
 
 keymap.set("n", "<leader>to", "<cmd>tabnew<CR>", { desc = "[T]ab [O]pen" }) -- open new tab
@@ -33,7 +33,7 @@ keymap.set("n", "n", "nzz")
 keymap.set("n", "N", "Nzz")
 
 -- compile LaTeX file
-keymap.set("n", "<leader>c", ":w<CR>:!pdflatex %<CR>", { desc = "[C]ompile LaTeX file" })
+-- keymap.set("n", "<leader>c", ":w<CR>:!pdflatex %<CR>", { desc = "[C]ompile LaTeX file" })
 
 keymap.set("n", "<leader>ya", ":%y+<CR>", { desc = "[Y]ank [A]ll" }) -- copy entire file
 keymap.set("n", "<leader>yw", 'viw"+y', { desc = "[Y]ank [W]ord to system clipboard" }) -- copy to system clipboard

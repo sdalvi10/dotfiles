@@ -28,16 +28,21 @@ return {
 		-- set keymaps
 		local keymap = vim.keymap -- for conciseness
 
-		keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Fuzzy find files in cwd" })
-		keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "Fuzzy find recent files" })
-		keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>", { desc = "Find string in cwd" })
-		keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", { desc = "Find string under cursor in cwd" })
+		keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Fuzzy [F]ind [F]iles in cwd" })
+		keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "Fuzzy [F]ind [R]ecent files" })
+		keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>", { desc = "[F]ind [S]tring in cwd" })
+		keymap.set(
+			"n",
+			"<leader>fc",
+			"<cmd>Telescope grep_string<cr>",
+			{ desc = "[F]ind string under [C]ursor in cwd" }
+		)
 		keymap.set("n", "<leader><leader>", "<cmd>Telescope buffers<cr>", { desc = "[ ] Find existing buffers" })
 
 		-- Shortcut for searching your Neovim configuration files
 		local builtin = require("telescope.builtin")
 		vim.keymap.set("n", "<leader>fn", function()
 			builtin.find_files({ cwd = vim.fn.stdpath("config") })
-		end, { desc = "Find Neovim files" })
+		end, { desc = "[F]ind [N]eovim files" })
 	end,
 }
