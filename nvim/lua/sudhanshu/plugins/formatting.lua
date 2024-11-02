@@ -18,6 +18,7 @@ return {
 				python = { "isort", "black" },
 				java = { "google-java-format" },
 				xml = { "xmlformatter" },
+				sql = { "sql-formatter" },
 			},
 			format_on_save = {
 				lsp_fallback = true,

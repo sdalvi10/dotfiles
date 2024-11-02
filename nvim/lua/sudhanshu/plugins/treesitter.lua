@@ -23,10 +23,7 @@ return {
 			-- ensure these language parsers are installed
 			ensure_installed = {
 				"json",
-				"javascript",
-				"yaml",
 				"html",
-				"css",
 				"markdown",
 				"markdown_inline",
 				"bash",
@@ -37,6 +34,9 @@ return {
 				"query",
 				"vimdoc",
 				"c",
+				"c_sharp",
+				"python",
+				"sql",
 			},
 			incremental_selection = {
 				enable = true,
