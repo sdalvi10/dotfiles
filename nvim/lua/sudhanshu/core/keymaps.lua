@@ -45,3 +45,6 @@ keymap.set("v", "<leader>y", '"+y', { desc = "[Y]ank selection" }) -- copy to sy
 -- create a new line above or below the cursor while staying in normal mode
 keymap.set("n", "<CR>", "m`o<Esc>``", { desc = "Create a new line below the cursor and stay in normal mode" })
 keymap.set("n", "<S-CR>", "m`O<Esc>``", { desc = "Create a new line above the cursor and stay in normal mode" })
+
+-- highlight all
+keymap.set("n", "<leader>va", "ggVG", { desc = "Highlight entire file" })
