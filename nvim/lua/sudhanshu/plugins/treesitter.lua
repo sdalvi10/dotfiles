@@ -37,6 +37,7 @@ return {
 				"c_sharp",
 				"python",
 				"sql",
+				"dart",
 			},
 			incremental_selection = {
 				enable = true,
